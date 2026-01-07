@@ -1,0 +1,128 @@
+.nom_du_site h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px large;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: blink;
+    color: #bd0f02;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px;                 
+    padding: 20px;
+    margin: 0;
+    position: absolute;        
+    top: 0;                    
+    right: 0;
+    width: 100%;
+    
+    
+}
+
+.navigation ul li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.navigation ul li a{
+    color: #bd0f02;
+}
+
+.heros{
+    background-image: url(tieboudieune.jpg);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.678);
+    background-blend-mode: darken;
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;  
+    color: white;
+    padding: 100px;
+    overflow: hidden;
+     
+    
+}
+
+
+.heros h1{
+    text-align:center;
+    white-space: nowrap;
+}
+
+.heros p{
+    text-align: center;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.heros button{
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #bd0f02;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #bd0f02;
+   
+}
+
+.heros button:hover{
+    background-color: white;
+    color: #bd0f02;
+    cursor: pointer;
+}
+
+
+.cartes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin: 30px auto;
+    gap: 20px; 
+    
+}
+
+.carte-service{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+
+.cartes h1{
+    color: #bd0f02;
+    text-align: center;
+}
+
+.cartes p{
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 10px;
+    font-size: 15px;
+}
+    
+.avis{  
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    width: 100%;
+    background-color: #bd0f02;
+    color: white;
+}
+
+
+footer{
+    color: white;
+    text-align: center;
+    background-color: #bd0f02;
+}
+
+
+ 

@@ -1,128 +1,134 @@
-.nom_du_site h2{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.nom_du_site h2 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px large;
+    font-size: 22px;
     font-weight: bold;
     font-style: italic;
-    text-decoration: blink;
     color: #bd0f02;
 }
 
 .navigation ul {
     display: flex;
-    justify-content: flex-end; 
-    gap: 20px;                 
-    padding: 20px;
-    margin: 0;
-    position: absolute;        
-    top: 0;                    
-    right: 0;
-    width: 100%;
-    
-    
-}
-
-.navigation ul li {
+    gap: 20px;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
 }
 
-.navigation ul li a{
+.navigation ul li a {
+    text-decoration: none;
     color: #bd0f02;
+    font-weight: bold;
 }
 
-.heros{
+.heros {
     background-image: url(tieboudieune.jpg);
-    border-radius: 30px;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
-    position: relative; 
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    text-align: center;  
     color: white;
-    padding: 100px;
-    overflow: hidden;
-     
-    
-}
-
-
-.heros h1{
-    text-align:center;
-    white-space: nowrap;
-}
-
-.heros p{
     text-align: center;
-    white-space: nowrap;
-    font-size: 18px;
+    padding: 80px 20px;
+    border-radius: 20px;
+    margin: 20px;
 }
 
-.heros button{
-    display: inline-block;
+.heros h1 {
+    margin-bottom: 15px;
+}
+
+.heros p {
+    margin-bottom: 20px;
+}
+
+.heros button {
     padding: 12px 25px;
     background-color: #bd0f02;
     color: white;
-    font-size: 16px;
-    font-weight: bold;
+    border: none;
     border-radius: 10px;
-    border: 2px solid #bd0f02;
-   
-}
-
-.heros button:hover{
-    background-color: white;
-    color: #bd0f02;
+    font-weight: bold;
     cursor: pointer;
 }
 
-
-.cartes{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    width: 80%;
-    margin: 30px auto;
-    gap: 20px; 
-    
-}
-
-.carte-service{
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
-}
-
-
-.cartes h1{
+.heros button:hover {
+    background-color: white;
     color: #bd0f02;
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.carte-service {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
     text-align: center;
 }
 
-.cartes p{
-    text-align: center;
-    white-space: nowrap;
-    margin-top: 10px;
-    font-size: 15px;
+.carte-service h1 {
+    color: #bd0f02;
+    margin-bottom: 10px;
 }
-    
-.avis{  
+
+
+.avis-section {
+    padding: 20px;
+}
+
+.avis {
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
-    width: 100%;
+    padding: 20px;
     background-color: #bd0f02;
     color: white;
+    border-radius: 10px;
 }
 
 
-footer{
-    color: white;
+footer {
     text-align: center;
     background-color: #bd0f02;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
 }
 
+@media (max-width: 768px) {
 
- 
+    header {
+        flex-direction: row; 
+    }
+
+    .navigation ul {
+        gap: 10px;
+    }
+
+    .navigation ul li a {
+        font-size: 12px;
+    }
+
+    .nom_du_site h2 {
+        font-size: 16px;
+    }
+}
